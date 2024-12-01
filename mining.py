@@ -10,7 +10,6 @@ data = pd.read_csv('train.csv')
 
 data.isna().sum()
 
-data.dropna(inplace=True)
 data.drop('id', axis=1, inplace=True)
 
 X = data.drop("Response", axis=1)
