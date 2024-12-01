@@ -15,7 +15,7 @@ data.drop('id', axis=1, inplace=True)
 X = data.drop("Response", axis=1)
 y = data["Response"]
 
-x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.0000333, random_state=42)
+x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.0000143, random_state=42)
 
 oversampler = RandomOverSampler(random_state=42)
 x_train_resampled, y_train_resampled = oversampler.fit_resample(x_train, y_train)
